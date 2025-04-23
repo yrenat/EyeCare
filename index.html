@@ -46,10 +46,26 @@
       border: 1px solid #aaa;
       margin-left: 0.5em;
     }
+    .eyecare-link {
+      margin-top: 2em;
+      padding: 1em;
+      background: #f0f6f9;
+      border-left: 4px solid #2a7fa4;
+      border-radius: 8px;
+      display: inline-block;
+      max-width: 420px;
+    }
+    .eyecare-link a {
+      color: #1976d2;
+      text-decoration: underline;
+      font-weight: bold;
+      word-break: break-all;
+    }
     @media (max-width: 600px) {
       .container { padding: 1em; }
       img { max-height: 35vh; }
       .blurness-control { font-size: 1em; }
+      .eyecare-link { max-width: 98vw; }
     }
   </style>
 </head>
@@ -59,7 +75,7 @@
     <div class="blurness-control">
       <label for="blurness">Screen Time Today:</label>
       <select id="blurness">
-        <option value="0">0</option>
+        <option value="0">0 (None)</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -69,13 +85,23 @@
         <option value="7">7</option>
         <option value="8">8</option>
         <option value="9">9</option>
-        <option value="10">10</option>
+        <option value="10">10 (Max)</option>
       </select>
     </div>
     <img id="redMansion" src="red-mansion.jpg" alt="Red Mansion">
     <p>
-      Adjust <b>Screen Time Today</b> to see how you are viewing the world!
+      This is a demo of <b>red-mansion.jpg</b> from the repository root.<br>
+      Adjust <b>Screen Time Today</b> to change the blurriness!
     </p>
+    <div class="eyecare-link">
+      <p>
+        <strong>✨ Want to share or download Eye Care memes and GIFs?</strong><br>
+        This is a public folder where <b>everyone</b> can make, upload, or download GIFs or memes about eye care—any amount they want.<br>
+        <a href="https://drive.google.com/drive/folders/1YJ2S3q13__TUz2Fu72wFEjvPx5GeukKb?usp=drive_link" target="_blank" rel="noopener">
+          Click here to visit the Eye Care GIF & Meme Folder on Google Drive
+        </a>
+      </p>
+    </div>
   </div>
   <script>
     const img = document.getElementById('redMansion');
